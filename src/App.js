@@ -15,10 +15,10 @@ function App() {
     puesto: "Instructor"
   },
   {
-    equipo: "Programación",
-    foto: "https://github.com/genesysaluralatam.png",
-    nombre: "Genesys Rondón",
-    puesto: "Desarrolladora de software e instructora"
+    equipo: "Front End",
+    foto: "https://github.com/mar-jaramillo.png",
+    nombre: "Angi Marcela Muñoz",
+    puesto: "Desarrolladora de software"
   },
   {
     equipo: "UX y Diseño",
@@ -26,6 +26,13 @@ function App() {
     nombre: "Jeanmarie Quijada",
     puesto: "Instructora en Alura Latam"
   },
+  {
+  equipo: "UX y Diseño",
+  foto: "https://github.com/jspacy.png",
+  nombre: "Jeanmarie Quijada",
+  puesto: "ProductDesigner"
+},
+
   {
     equipo: "Programación",
     foto: "https://github.com/christianpva.png",
