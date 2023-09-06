@@ -16,6 +16,7 @@ function App() {
       foto: "https://github.com/harlandlohora.png",
       nombre: "Harland Lohora",
       puesto: "Instructor",
+      fav: true,
     },
     {
       id: uuid(),
@@ -23,6 +24,7 @@ function App() {
       foto: "https://github.com/mar-jaramillo.png",
       nombre: "Angi Marcela Muñoz",
       puesto: "Desarrolladora de software",
+      fav: true,
     },
     {
       id: uuid(),
@@ -30,6 +32,7 @@ function App() {
       foto: "https://github.com/JeanmarieAluraLatam.png",
       nombre: "Jeanmarie Quijada",
       puesto: "Instructora en Alura Latam",
+      fav: false,
     },
     {
       id: uuid(),
@@ -37,6 +40,7 @@ function App() {
       foto: "https://github.com/jspacy.png",
       nombre: "Jeanmarie Quijada",
       puesto: "ProductDesigner",
+      fav: true,
     },
 
     {
@@ -45,6 +49,7 @@ function App() {
       foto: "https://github.com/christianpva.png",
       nombre: "Christian Velasco",
       puesto: "Head de Alura e Instructor",
+      fav: false,
     },
     {
       id: uuid(),
@@ -52,6 +57,7 @@ function App() {
       foto: "https://github.com/JoseDarioGonzalezCha.png",
       nombre: "Jose Gonzalez",
       puesto: "Dev FullStack",
+      fav: false,
     },
   ]);
 
@@ -144,6 +150,17 @@ function App() {
     actualizarEquipos([...equipos, { ...nuevoEquipo, id: uuid }]);
   };
 
+  const like = (id) => {
+    console.log("like", id);
+    const colaboradoresActualizados = colaboradores.map((colaborador) => {
+      if (colaborador.id === id) {
+        colaborador.fav = !colaborador.fav;
+      }
+      return colaborador;
+    });
+    actualizarColaboradores(colaboradoresActualizados);
+  };
+
   return (
     <div>
       <Header />
@@ -167,6 +184,7 @@ function App() {
           )}
           eliminarColaborador={eliminarColaborador}
           actualizarColor={actualizarColor}
+          like={like}
         />
       ))}
 
