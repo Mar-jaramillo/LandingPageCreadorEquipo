@@ -1,3 +1,6 @@
+![image](https://github.com/Mar-jaramillo/LandingPageCreadorEquipo/assets/126035237/dfd2411e-c02f-4576-b109-31b773a664ab)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
